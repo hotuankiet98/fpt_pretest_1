@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            Online Shopee
+        </header>
+        <div class="nav">
+            <nav class="menu">
+                <a href="home.html">HOME</a>
+                <a>PRODUCT</a>
+                <a>SHOPS</a>
+                <a style="color:brown" id="register-id">REGISTER</a>
+                <a>SIGNIN</a>
+            </nav>
+        </div>
+        <form class="member-info" onsubmit="return submitInfo()">
+            <div id="member-info">
+                <h2>Member Information</h2>
+                <table>
+                    <tr>
+                        <td>Full name:</td>
+                        <td><input class="input-text" type="text" id="username" placeholder="&nbsp" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender
+                        </td>
+                        <td>
+                            <input checked type="radio" name="gender" class="gender" value="male">Male
+                            <input type="radio" name="gender" class="gender" value="female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hoodies</td>
+                        <td>
+                            <input type="checkbox" name="hobbies" class="hobbies" value="sport">Sport
+                            <input type="checkbox" name="hobbies" class="hobbies" value="music">Music
+                            <input type="checkbox" name="hobbies" class="hobbies" value="game">Game
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Birthday</td>
+                        <td>
+                            <input type="date" id="birthday" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><input class="input-text" type="text" id="address" placeholder="&nbsp" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input class="input-text" type="email" id="email" pattern="\w+@\w+\.[a-z]{2,3}" placeholder="&nbsp" required></td>
+                    </tr>
+                        <td class="label-input">Phone:</td>
+                        <td><input class="input-text" type="text" id="phone" pattern="\d{1,}" placeholder="&nbsp" required></td>
+                    </tr>
+                    <tr>
+                        <td>Select:</td>
+                        <td> 
+                            <select class="city">
+                                <option value="HCM">HCM</option>
+                                <option value="HN">HN</option>
+                                <option value="DN">DN</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Comment:
+                        </td>
+                        <td>       
+                            <textarea class="input-text" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div id="button_id">
+                        <input class="input-button-item" type="submit">
+                        <input class="input-button-item" type="reset">
+                </div>
+            </div>
+        </form>
+        <div id="notification-background">
+            <div id="notification-content" >
+                <i class="fa fa-close close-icon" style="font-size:48px"></i>
+                <div id="info">
+
+                </div>
+            </div>  
+        </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
